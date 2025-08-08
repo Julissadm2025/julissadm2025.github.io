@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -148,4 +148,261 @@
     </ul>
     <a href="qcose_quesst_poster.pdf" target="_blank">View Project Poster</a>
   </div>
-</div>
+</div>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Julissa Molina – Research</title>
+
+  <!-- Open Graph (optional) -->
+  <meta property="og:title" content="Julissa Molina – Research" />
+  <meta property="og:description" content="Cybersecurity research, publications, and projects." />
+
+  <style>
+    :root{
+      --bg: #f7f7f7;
+      --card: #ffffff;
+      --ink: #101010;
+      --muted: #555;
+      --accent: #18b84b;
+      --accent-2: #e37777;
+      --ring: rgba(24,184,75,.3);
+
+      --radius: 18px;
+      --shadow: 0 2px 12px rgba(0,0,0,.08);
+      --gap: 12px;       /* tighter spacing between cards */
+      --pad: 14px;       /* slightly smaller padding in cards */
+      --maxw: 980px;     /* comfortable line length */
+    }
+
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg: #0e0f12;
+        --card: #14161a;
+        --ink: #e8e8e8;
+        --muted: #b6b6b6;
+        --shadow: 0 2px 10px rgba(0,0,0,.35);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.45;
+    }
+
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+    a:focus-visible{
+      outline: 2px solid var(--ring);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 28px 18px 54px;
+    }
+
+    /* Profile */
+    header.profile{
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 24px;
+      align-items: center;
+      background: var(--card);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 16px;
+      margin: 22px auto 28px;
+    }
+
+    .profile img{
+      width: 220px; height: 220px; object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.12);
+      background: #e0e0e0;
+    }
+
+    .profile h1{
+      margin: 0 0 6px 0;
+      font-size: 2rem;
+      font-weight: 750;
+      letter-spacing: 0.2px;
+    }
+    .profile p{
+      margin: 8px 0 12px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .links{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      margin-top: 6px;
+      font-size: 1.05rem;
+    }
+    .links a{
+      font-weight: 700;
+    }
+    .links a.cv{ color: var(--accent); }
+    .links a.linkedin{ color: var(--accent-2); }
+
+    @media (max-width: 780px){
+      header.profile{
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .profile img{
+        width: 160px; height: 160px;
+        margin: 0 auto;
+      }
+    }
+
+    /* Sections */
+    section{
+      margin: 12px 0 26px;
+    }
+
+    .section-title{
+      text-align: center;
+      margin: 8px 0 12px;   /* tighter heading spacing */
+      font-size: 1.5rem;
+      letter-spacing: .2px;
+    }
+
+    /* Papers grid */
+    .papers{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: var(--gap);         /* controls space between cards */
+      align-items: start;
+    }
+
+    .paper{
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: var(--pad);
+      display: grid;
+      gap: 8px;
+    }
+    .paper strong{ font-size: 1rem; line-height: 1.3; }
+    .paper em{ color: var(--muted); font-style: normal; font-size: .95rem; }
+    .paper a.file{
+      width: fit-content;
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .paper:hover{ transform: translateY(-1px); transition: transform .12s ease; }
+
+    /* Lists inside cards */
+    .paper ul{
+      margin: 6px 0 2px 18px;
+      padding: 0;
+    }
+    .paper li{ margin: 4px 0; }
+
+    /* Print: make it clean for sharing as PDF */
+    @media print{
+      .wrap{ padding: 0; }
+      header.profile{ box-shadow: none; }
+      .paper{ break-inside: avoid; box-shadow: none; }
+      a{ text-decoration: underline; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="profile" aria-label="Profile">
+      <img src="julissa.JPG" alt="Portrait of Julissa Molina" loading="lazy" />
+      <div>
+        <h1>Julissa Molina</h1>
+        <p>
+          I am a cybersecurity student at SUNY Farmingdale with a passion for education, research, and technology. My research interests include cybersecurity education, digital privacy, and STEM outreach. I enjoy building tools that help make the internet safer and mentoring others who are starting in this field.
+          <br><br>
+          This site features my recent research papers and conference presentations.
+        </p>
+        <nav class="links" aria-label="Profile links">
+          <a class="cv" href="JulissadmCV.pdf" target="_blank" rel="noopener">CV</a>
+          <!-- Replace with your public LinkedIn URL -->
+          <a class="linkedin" href="https://www.linkedin.com/in/julissa-diane-molina" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section aria-labelledby="pubs">
+        <h2 id="pubs" class="section-title">Research Publications</h2>
+
+        <div class="papers">
+          <article class="paper">
+            <strong>Factors Impacting Cybersecurity Students’ Classroom Success with Their Worries Towards Success</strong>
+            <a class="file" href="factors-cybersecurity-success_Paper1.pdf" target="_blank" rel="noopener">Download PDF</a>
+            <em>15th IEEE Integrated STEM Education Conference at Princeton, 2025</em>
+          </article>
+
+          <article class="paper">
+            <strong>Risk Assessment Factors, Anxiety, and Cyber-incident Experiences of Cybersecurity Students</strong>
+            <a class="file" href="risk-assessment-factors_Paper2.pdf" target="_blank" rel="noopener">Download PDF</a>
+            <em>15th IEEE Integrated STEM Education Conference at Princeton, 2025</em>
+          </article>
+
+          <article class="paper">
+            <strong>Professors’ Impact on Cybersecurity Students’ Learning</strong>
+            <a class="file" href="professors-impact-cybersecurity_Paper3.pdf" target="_blank" rel="noopener">Download PDF</a>
+            <em>15th IEEE Integrated STEM Education Conference at Princeton, 2025</em>
+          </article>
+
+          <article class="paper">
+            <strong>Environmental Factors Impacting Cybersecurity Students’ Major-specific Conceptual Learning</strong>
+            <a class="file" href="ASEE_2025_-_Annual_Conference_-_Environmental_Factors_Impacting_Cybersecurity_Students__Major-Specific_Conceptual_Learning_-_Final_draft.pdf" target="_blank" rel="noopener">Download PDF</a>
+            <em>2025 ASEE Annual Conference, Montreal, Canada</em>
+          </article>
+
+          <article class="paper">
+            <strong>Cybersecurity Students’ Choices of Learning Strategies for Covering Major-specific Concepts</strong>
+            <a class="file" href="ASEE_2025_-_Annual_Conference_-_Paper_1_-_Cybersecurity_Students__Choices_of_Learning_Strategies_for.pdf" target="_blank" rel="noopener">Download PDF</a>
+            <em>2025 ASEE Annual Conference, Montreal, Canada</em>
+          </article>
+
+          <article class="paper">
+            <strong>Social Factors Impacting Cybersecurity Students’ Learning and During Decision Making the Coverage of Major-specific Concepts</strong>
+            <a class="file" href="ASEE_2025_-_Annual_Conference_-_Paper_2_-_Social_Factors_Impacting_Cybersecurity_Students__Learning.pdf" target="_blank" rel="noopener">Download PDF</a>
+            <em>2025 ASEE Annual Conference, Montreal, Canada</em>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="rip">
+        <h2 id="rip" class="section-title">Research in Progress</h2>
+
+        <div class="papers">
+          <article class="paper">
+            <strong>QCOSE/QueSST (Quiet Supersonic Technology) – NASA X-59 Community Response Project</strong>
+            <em>Student Researcher, June 2024 to Present</em>
+            <ul>
+              <li>In collaboration with NASA and Dr. Kimberly Riegel, performed ray‑tracing simulations with Python to analyze sound wave propagation supporting NASA’s X‑59 noise reduction mission.</li>
+              <li>Creating a Raspberry Pi based device to capture “sonic thumps.”</li>
+            </ul>
+            <a class="file" href="qcose_quesst_poster.pdf" target="_blank" rel="noopener">View Project Poster</a>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
